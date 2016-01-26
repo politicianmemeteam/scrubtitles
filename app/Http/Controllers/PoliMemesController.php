@@ -46,7 +46,7 @@ class PoliMemesController extends Controller
         $videos_random = $this->getVideo($get_all);
         $get_all = true;    // all videos
         $videos_all = $this->getVideo($get_all);
-dd($videos_all, $videos_single, $videos_random);
+
         // get json to assoc array values to send to view
         $by_genre = "comedy";
         $single_genre_query = $this->getTrackInfo($by_genre);
