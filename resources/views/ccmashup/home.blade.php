@@ -4,6 +4,7 @@ polimemeteam
 @stop
 
 @section('body')
+What is wrong
 <div class="row">
   @foreach ($genres_info as $genre_info => $info)
   <div id="{{ $genre_info }}" class="hide" >
