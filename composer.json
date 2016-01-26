@@ -33,13 +33,13 @@
 			"php artisan clear-compiled",
 			"php artisan optimize",
 			"chmod -R 777 storage/app",
-			"chown -R www-data:www-data storage"
+			"chown -R root:www-data storage/app"
 		],
 		"post-update-cmd": [
 			"php artisan clear-compiled",
 			"php artisan optimize",
 			"chmod -R 777 storage/app",
-			"chown -R www-data:www-data storage"
+			"chown -R root:www-data storage/app"
 		],
 		"post-create-project-cmd": [
 			"php -r \"copy('.env.example', '.env');\"",
