@@ -3,7 +3,7 @@
 Inspire. Be inspired.
 @stop
 @section('header_title')
-Making kids happier & healthier
+Making videos happier & healthier
 @stop
 @section('header_subtitle')
 using sports & technology to build creative learning environments.
