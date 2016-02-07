@@ -16,12 +16,12 @@
     <div class="nav-wrapper container"><a id="logo-container" href="{{ url('/') }}" class="brand-logo">SCRUBTITLES</a>
 	@if (Auth::guest())
       <ul class="right hide-on-med-and-down">
-        <li><a href="{{ url('/home') }}">Log In</a></li>
+        <li><a href="{{ url('/') }}">Log In</a></li>
       </ul>
 		
 			
       <ul id="nav-mobile" class="side-nav">
-        <li><a href="{{ url('/home') }}">Log In</a></li>
+        <li><a href="{{ url('/') }}">Log In</a></li>
       </ul>
 	@else
       <ul class="right hide-on-med-and-down">
