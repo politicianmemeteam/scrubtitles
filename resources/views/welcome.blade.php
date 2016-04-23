@@ -60,7 +60,7 @@ using sports & technology to build creative learning environments.
             <h2 class="center light-blue-text"><i class="material-icons">mood</i></h2>
             <h5 class="center">Having the fun times of our life.</h5>
 
-            <p class="light">We value fun and community.</p>
+            <p class="light">We value fun.</p>
 			<p class="light">We have fun along the way with our family, our friends, and all our loved ones and we take time to become better citizens of our changing communities.</p>
           </div>
         </div>
