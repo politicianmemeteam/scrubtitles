@@ -1,6 +1,6 @@
 @extends('layout')
 @section('title')
-Inspire. Be inspired.
+#Inspire #Beinspired.
 @stop
 @section('header_title')
 Making kids happier & healthier
