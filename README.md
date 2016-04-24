@@ -1,2 +1,2 @@
 ﻿# scrubtitles
-Being migrated to Bitbucket in 2016.
+Migration to Bitbucket in 2016.
