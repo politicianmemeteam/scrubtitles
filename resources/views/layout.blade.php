@@ -13,15 +13,26 @@
 </head>
 <body>
   <nav class="light-blue lighten-1" role="navigation">
+<<<<<<< HEAD
     <div class="nav-wrapper container"><a id="logo-container" href="{{ url('/') }}" class="brand-logo">SCRUBTITLES</a>
 	@if (Auth::guest())
       <ul class="right hide-on-med-and-down">
         <li><a href="{{ url('/') }}">Log In</a></li>
+=======
+    <div class="nav-wrapper container"><a id="logo-container" href="{{ url('/') }}" class="brand-logo">Voicebits Apps</a>
+	@if (Auth::guest())
+      <ul class="right hide-on-med-and-down">
+        <li><a href="{{ url('/home') }}">Log In</a></li>
+>>>>>>> ff05ef7b3af658f8d14713f8790067b03b382552
       </ul>
 		
 			
       <ul id="nav-mobile" class="side-nav">
+<<<<<<< HEAD
         <li><a href="{{ url('/') }}">Log In</a></li>
+=======
+        <li><a href="{{ url('/home') }}">Log In</a></li>
+>>>>>>> ff05ef7b3af658f8d14713f8790067b03b382552
       </ul>
 	@else
       <ul class="right hide-on-med-and-down">
@@ -39,7 +50,32 @@
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
   </nav>
+<<<<<<< HEAD
 
+=======
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center orange-text">@yield('header_title')</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">@yield('header_subtitle')</h5>
+      </div>
+      <div class="row center">
+	  @yield('calltoaction')
+        
+      </div>
+
+{{--       <br><br>
+--}}
+    </div>
+  </div>
+
+<?php
+ //@yield('header_head);
+//@yield('header_nav);
+//@yield('footer_foot);
+?>
+>>>>>>> ff05ef7b3af658f8d14713f8790067b03b382552
   <div class="container">
    <div class="section">
             <div class="row">
@@ -67,6 +103,11 @@
     </div>
     <br><br>
   </div>
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> ff05ef7b3af658f8d14713f8790067b03b382552
 <?php 
 		$UserInfo = Auth::user();
 		$userstatus = ($UserInfo['attributes']['status'] == 'Y') ? true : false;

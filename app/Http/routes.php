@@ -17,6 +17,10 @@ Route::controllers([
 
 # Main
 Route::get('/', 'WelcomeController@index');
+<<<<<<< HEAD
+=======
+Route::get('home', 'HomeController@index'); // authenticated users home
+>>>>>>> ff05ef7b3af658f8d14713f8790067b03b382552
 
 # CCshake aka SCRUBTITLES api routing
 Route::get('subtitle/{genre}/{filename}', 'PoliMemesController@displaySubtitle');
@@ -29,4 +33,35 @@ Route::get('api/v1/get/track/{genre?}', 'PoliMemesController@getTrackInfo');
 Route::get('api/v1/get/parsed/{genre}/{id}/{offset?}', 'PoliMemesController@getParsedFiles');
 Route::resource('api/v1', 'PoliMemesController');
 
+<<<<<<< HEAD
 Route::post('subtitle/{filename}', 'PoliMemesController@putSubtitle');
+=======
+
+Route::post('subtitle/{filename}', 'PoliMemesController@putSubtitle');
+
+
+# Blog pages
+Route::get('about', 'WelcomeController@about');
+Route::get('blog', 'WelcomeController@blog');
+
+// Model bind and Resource routes
+
+    # Users
+    Route::model('users', 'App\User');
+    Route::resource('users', 'UsersController');
+    
+    # voicebitZ tables - Authenticated users only
+    Route::get('userz', 'HomeController@userz');
+    Route::get('bitz', 'HomeController@voizbitz');
+    Route::get('cloudz', 'HomeController@cloudz');
+    Route::get('peepz', 'HomeController@peepz');
+    
+    # userZ resource routing
+    Route::get('userz/{id}/edit', 'ZuserzController@edit');
+    Route::match(['put', 'patch'],'userz/{id}','ZuserzController@update');
+    Route::delete('userz/{id}', 'ZuserzController@destroy');
+    
+    # voizbitZ resource routing
+    Route::resource('bitz', 'ZvoizbitzController');
+
+>>>>>>> ff05ef7b3af658f8d14713f8790067b03b382552
