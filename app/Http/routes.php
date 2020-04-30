@@ -30,3 +30,7 @@ Route::get('api/v1/get/parsed/{genre}/{id}/{offset?}', 'PoliMemesController@getP
 Route::resource('api/v1', 'PoliMemesController');
 
 Route::post('subtitle/{filename}', 'PoliMemesController@putSubtitle');
+
+# Blog pages
+Route::get('about', 'WelcomeController@about');
+Route::get('blog', 'WelcomeController@blog');

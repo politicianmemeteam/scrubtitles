@@ -17,9 +17,7 @@
 	@if (Auth::guest())
       <ul class="right hide-on-med-and-down">
         <li><a href="{{ url('/') }}">Log In</a></li>
-      </ul>
-		
-			
+      </ul>		
       <ul id="nav-mobile" class="side-nav">
         <li><a href="{{ url('/') }}">Log In</a></li>
       </ul>
@@ -27,9 +25,7 @@
       <ul class="right hide-on-med-and-down">
         <li><a href="{{ url('/home') }}"><i class="material-icons">home</i></a></li>
         <li><a href="{{ url('/auth/logout') }}">Logout</a></li>
-      </ul>
-		
-			
+      </ul>			
       <ul id="nav-mobile" class="side-nav">
         <li><a href="{{ url('/home') }}"><i class="material-icons">home</i></a></li>
         <li><a href="{{ url('/auth/logout') }}"></a>Log Out</li>
@@ -39,7 +35,6 @@
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
   </nav>
-
   <div class="container">
    <div class="section">
             <div class="row">
